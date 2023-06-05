@@ -13,9 +13,15 @@ app.get('/', function (req, res) {
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(8080, function () {
-    console.log('Example app listening on port 8080!')
-})
+// Setup Server
+const port = 8080;
+// Spin up the server
+// eslint-disable-next-line no-unused-vars
+const server = app.listen(port, () => { console.log(`running on localhost:${port}`); });
+
+//app.listen(8080, function () {
+//    console.log('Example app listening on port 8080!')
+//})
 
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
