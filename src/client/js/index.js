@@ -1,2 +1,4 @@
-import { handleSubmit } from './js/formHandler'
+import { handleSubmit } from './formHandler';
+import { checkForName } from './nameChecker';
+console.log(checkForName);
 alert("I exist!");
