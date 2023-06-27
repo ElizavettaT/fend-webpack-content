@@ -6,6 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/index.js",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && webpack",
+    "build-prod": "webpack --config webpack.prod.js",
+    "build-dev": "webpack --config webpack.dev.js",
     "watch": "set NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=development&& webpack --mode development --watch"
   },
   "keywords": [],
